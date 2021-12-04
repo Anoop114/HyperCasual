@@ -1,0 +1,15 @@
+Full Unity documentation can be found at: http://docs.unity3d.com/Manual/index.html
+
+Code documentation and a detailed Read Me have been included in seperate files.
+
+Reskin Guide:
+
+Sprites are located in: Unity Project/Avoid/Assets/Avoid/Sprites/
+Audio clips are located in: Unity Project/Avoid/Assets/Avoid/Audio
+
+1) Ensure project is not open in Unity.
+2) Find the sprite or audio clip you would like to replace in a file explorer. Use the above paths as reference.
+3) Copy your file into the folder. Important: ensure your file has the same name as the one you would like to replace.
+4) When asked if you would like to replace the file, select Yes. The file will be overwritten.
+
+Ensure that your sprites have the same dimensions as the originals, otherwise objects may become distorted in the game and require you to manually scale objects in Unity.
