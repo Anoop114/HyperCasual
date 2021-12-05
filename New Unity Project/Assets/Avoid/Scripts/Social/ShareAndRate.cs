@@ -12,7 +12,7 @@ public class ShareAndRate : MonoBehaviour
     public void Rate()
     {
         print("Place link to the game in the store here");
-        Application.OpenURL("https://assetstore.unity.com/packages/templates/tutorials/avoid-82067");
+        // Application.OpenURL("https://assetstore.unity.com/packages/templates/tutorials/avoid-82067");
 
     }
 
