@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void LooseGame()
     {
-        Time.timeScale = 0;
+        // Time.timeScale = 0;
         LooseUI.SetActive(true);
         Destroy(gameObject);
     }

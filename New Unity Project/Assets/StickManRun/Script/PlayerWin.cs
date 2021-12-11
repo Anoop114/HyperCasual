@@ -8,6 +8,7 @@ public class PlayerWin : MonoBehaviour
     [SerializeField]private Animator playerAnimator;
     [SerializeField]private PlayerMovementStickMan playerSpeed;
     [SerializeField]private CinemachineVirtualCamera VCam4;
+    public GameObject winUI;
     private void OnTriggerEnter(Collider other) {
         if(other.GetComponent<Collider>().tag == "Finish")
         {
@@ -25,14 +26,15 @@ public class PlayerWin : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         playerSpeed.gameAudioManager.StopSound("Win");
-        yield return new WaitForSeconds(5f);
-        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-        if(nextScene <= 3)
-        {
-            SceneManager.LoadScene(nextScene);
-        }else
-        {
-            yield return null;
-        }
+        yield return new WaitForSeconds(2f);
+        // int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        // if(nextScene <= 3)
+        // {
+        //     SceneManager.LoadScene(nextScene);
+        // }else
+        // {
+        //     yield return null;
+        // }
+        winUI.SetActive(true);
     }
 }

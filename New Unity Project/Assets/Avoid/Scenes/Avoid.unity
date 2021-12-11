@@ -1786,7 +1786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 675160559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2076883198}
+        m_TargetAssemblyTypeName: LoadSceneOnButtonClick, Assembly-CSharp
+        m_MethodName: LoadSceneOnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &675160559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2026,7 +2038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752867266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2076883198}
+        m_TargetAssemblyTypeName: LoadSceneOnButtonClick, Assembly-CSharp
+        m_MethodName: LoadSceneOnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &752867266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,12 +2181,12 @@ GameObject:
   - component: {fileID: 785108800}
   - component: {fileID: 785108799}
   m_Layer: 5
-  m_Name: Leaderboards Button
+  m_Name: Exit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &785108798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2180,7 +2204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 824}
+  m_AnchoredPosition: {x: 0, y: 392}
   m_SizeDelta: {x: 400, y: 246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785108799
@@ -2227,28 +2251,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558747493}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ShowUI
-        m_Mode: 1
+      - m_Target: {fileID: 2076883198}
+        m_TargetAssemblyTypeName: LoadSceneOnButtonClick, Assembly-CSharp
+        m_MethodName: LoadSceneOnClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1618254638}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayButtonPressedAudioClip
-        m_Mode: 1
+      - m_Target: {fileID: 2076883198}
+        m_TargetAssemblyTypeName: LoadSceneOnButtonClick, Assembly-CSharp
+        m_MethodName: LoadSceneOnClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &785108800
@@ -4522,6 +4546,7 @@ GameObject:
   - component: {fileID: 1618254635}
   - component: {fileID: 1618254634}
   - component: {fileID: 1618254638}
+  - component: {fileID: 1618254639}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -4600,6 +4625,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipToPlayOnButtonPress: {fileID: 8300000, guid: 4bfb39c53428b9140b80ffdf56ec4f3e,
     type: 3}
+--- !u!114 &1618254639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618254633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b74b14475f57b643937e1c5df1583f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundOffButton: {fileID: 0}
+  SoundOnButton: {fileID: 0}
 --- !u!1 &1642660159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,7 +4775,7 @@ GameObject:
   - component: {fileID: 1684699600}
   - component: {fileID: 1684699599}
   m_Layer: 5
-  m_Name: Leadboard Label
+  m_Name: Exit Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4794,7 +4833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEADERBOARDS
+  m_Text: EXIT
 --- !u!222 &1684699600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5628,6 +5667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076883197}
   - component: {fileID: 2076883196}
+  - component: {fileID: 2076883198}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -5673,6 +5713,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076883198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076883195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2d99fa3f297b04190d93b22f6097c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123948858
 GameObject:
   m_ObjectHideFlags: 0
