@@ -6,9 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 14f474ecb6f45a5409243224b98d708d
+  - enabled: 1
+    path: Assets/Scenes/MenuStickMan.unity
+    guid: 3607878f00545774295abc2a4946f000
+  - enabled: 1
+    path: Assets/Scenes/MenuAlien.unity
+    guid: 117c77305989c5c438be5df658e14820
+  - enabled: 1
+    path: Assets/Scenes/MenuAvoid.unity
+    guid: 01479f4a2221d7a438de6c56be3595fd
+  - enabled: 1
+    path: Assets/Scenes/MenuCrowdRun.unity
+    guid: 147dd8729074dff4c8bc269ca7c02903
+  - enabled: 1
     path: Assets/Do not shoot Aliens/Scenes/Alien.unity
     guid: 5b63ebdabb5ddca42b6d94db1ec26ff8
   - enabled: 1
     path: Assets/Avoid/Scenes/Avoid.unity
     guid: c998ac61c3a4042658efea80c37ec8b7
+  - enabled: 1
+    path: Assets/CrowdRun/Scenes/CRLevel1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/CrowdRun/Scenes/CRLevel2.unity
+    guid: 13d5edd26d905984a9c1eac6d5aa02e3
+  - enabled: 1
+    path: Assets/CrowdRun/Scenes/CRLevel3.unity
+    guid: 2875fa2ca0a7d514887f0872cc613f49
+  - enabled: 1
+    path: Assets/StickManRun/Scenes/StickLev1.unity
+    guid: 38378dfe44386604991f465d10a87fd0
+  - enabled: 1
+    path: Assets/StickManRun/Scenes/StickLev2.unity
+    guid: 60f1d779307d8bc4fbf825c43f452df7
+  - enabled: 1
+    path: Assets/StickManRun/Scenes/StickLev3.unity
+    guid: 4e9657b205be0224b81f220f040296c3
+  - enabled: 1
+    path: Assets/StickManRun/Scenes/StickLev4.unity
+    guid: ebf7faa4025dca046853745ed8cec2f6
   m_configObjects: {}

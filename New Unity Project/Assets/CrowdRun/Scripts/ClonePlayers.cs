@@ -36,12 +36,22 @@ public class ClonePlayers : MonoBehaviour
             playerAttractor.SetActive(true);
             if(multiply)
             {
-                Handheld.Vibrate();
+                #if UNITY_ANDROID
+                    if(Application.platform != RuntimePlatform.WebGLPlayer)
+                    {
+                        Handheld.Vibrate();
+                    }
+                #endif
                 palyerCloning.ClonePlayer_Multiply(count);
             }
             if(add)
             {
-                Handheld.Vibrate();
+                #if UNITY_ANDROID
+                    if(Application.platform != RuntimePlatform.WebGLPlayer)
+                    {
+                        Handheld.Vibrate();
+                    }
+                #endif
                 palyerCloning.ClonePlayer_Sum(count);
             }
             playerAttractor.SetActive(false);

@@ -9,7 +9,12 @@ public class obstacle : MonoBehaviour
     {
         if(other.GetComponent<Collider>().tag == "Player")
         {
-            Handheld.Vibrate();
+            #if UNITY_ANDROID
+                if(Application.platform != RuntimePlatform.WebGLPlayer)
+                {
+                    Handheld.Vibrate();
+                }
+            #endif
             Destroy(other.gameObject);
         }
     }
